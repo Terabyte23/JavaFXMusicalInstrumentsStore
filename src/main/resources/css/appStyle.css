@@ -1,0 +1,207 @@
+.bodyDown{
+    -fx-background-color: #353535;
+}
+
+.mainBody{
+    -fx-background-color: #494848;
+}
+
+.table-view {
+    -fx-background-color: #494848;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #353535;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #353535;
+}
+
+.table-view .filler {
+    -fx-background-color: #353535;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: #494848;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #3a3a3a;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #5a5a5a, #3a3a3a);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: #222;
+    -fx-border-radius: 8px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #6a6a6a, #4a4a4a);
+}
+
+.button:pressed {
+    -fx-background-color: #2a2a2a;
+}
+
+.menu-bar {
+    -fx-background-color: #353535;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-background-color: #5a5a5a;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #6a6a6a;
+}
+
+.menu-item:focused {
+    -fx-background-color: #3a3a3a;
+}
+
+.body{
+    -fx-background-color: #494848;
+}
+
+/* Устанавливаем общий стиль для всего VBox */
+#vbBrandFormRoot {
+    -fx-background-color: #494848; /* Фон для всего VBox */
+    -fx-padding: 20px; /* Отступы */
+}
+
+/* Стиль для всех Label элементов */
+.Label {
+    -fx-text-fill: white; /* Белый текст */
+    -fx-font-size: 16px; /* Размер шрифта */
+}
+
+/* Стиль для TextField */
+.TextField {
+    -fx-background-color: #353535; /* Темный фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-border-color: #494848; /* Цвет границы */
+    -fx-border-radius: 5px; /* Радиус границы */
+}
+
+/* Стиль для ListView */
+.ListView {
+    -fx-background-color: #353535; /* Темный фон */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-border-color: #494848; /* Цвет границы */
+}
+
+/* Стиль для Button */
+.Button {
+    -fx-background-color: #5a5a5a; /* Темный фон кнопки */
+    -fx-text-fill: white; /* Белый текст */
+    -fx-font-weight: bold; /* Жирный шрифт */
+    -fx-background-radius: 5px; /* Радиус углов */
+    -fx-padding: 10px 20px; /* Отступы в кнопке */
+}
+
+.Button:hover {
+    -fx-background-color: #6a6a6a; /* Более светлый фон при наведении */
+}
+
+.Button:pressed {
+    -fx-background-color: #4a4a4a; /* Еще более темный фон при нажатии */
+}
+
+/* Общий стиль для VBox */
+.VBox {
+    -fx-background-color: #494848; /* Темный фон */
+    -fx-padding: 20px; /* Внутренние отступы */
+    -fx-spacing: 10px; /* Расстояние между элементами */
+}
+
+/* Стиль для заголовка формы */
+.Label {
+    -fx-text-fill: white; /* Белый цвет текста */
+    -fx-font-size: 22px; /* Размер шрифта */
+    -fx-font-weight: bold;
+}
+
+/* Стиль для второго Label с подсказкой (lbInfo) */
+#lbInfo {
+    -fx-text-fill: #d3d3d3; /* Серый цвет текста */
+    -fx-font-size: 14px; /* Размер шрифта */
+    -fx-font-style: italic; /* Курсив */
+}
+
+/* Стиль для всех TextField и PasswordField */
+.TextField, .PasswordField {
+    -fx-background-color: #353535; /* Темный фон */
+    -fx-text-fill: white; /* Белый цвет текста */
+    -fx-border-color: #494848; /* Цвет границы */
+    -fx-border-radius: 5px; /* Радиус углов */
+    -fx-padding: 5px; /* Внутренние отступы */
+}
+
+/* Стиль для кнопки */
+.Button {
+    -fx-background-color: #3382d7; /* Синий цвет кнопки */
+    -fx-text-fill: white; /* Белый текст на кнопке */
+    -fx-font-size: 14px; /* Размер шрифта */
+    -fx-background-radius: 5px; /* Радиус углов */
+    -fx-padding: 10px 20px; /* Отступы внутри кнопки */
+}
+
+.Button:hover {
+    -fx-background-color: #5b95e8; /* Светлый синий при наведении */
+}
+
+.Button:pressed {
+    -fx-background-color: #2967b0; /* Темный синий при нажатии */
+}
+
+/* Стиль для текста с гиперссылкой (для регистрации) */
+.Label[onMouseClicked] {
+    -fx-text-fill: #3382d7; /* Синий цвет текста */
+    -fx-font-size: 14px; /* Размер шрифта */
+    -fx-cursor: hand; /* Курсор в виде руки */
+    -fx-font-weight: bold;
+}
+
+.Label[onMouseClicked]:hover {
+    -fx-text-fill: #1e5b8a; /* Более темный синий при наведении */
+}
+
+/* Стиль для полей ввода внутри VBox */
+.VBox > HBox {
+    -fx-spacing: 10px; /* Отступ между Label и полем ввода */
+}
+
+.VBox > HBox > Label {
+    -fx-text-fill: white; /* Белый текст для Label */
+    -fx-pref-width: 100px; /* Ширина для меток */
+    -fx-alignment: CENTER_RIGHT; /* Выравнивание текста по правому краю */
+}
+
+/* Добавление отступов вокруг VBox */
+.VBox {
+    -fx-padding: 30px; /* Отступы от краев окна */
+}
+
+

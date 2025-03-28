@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbMenuFormRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="599.0" styleClass="body" stylesheets="@../css/appStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MusicalInstrumentStoreFX.controller.MenuFormController">
+    <children>
+        <MenuBar styleClass="menu-bar" stylesheets="@../css/appStyle.css">
+            <menus>
+                <Menu fx:id="mInstruments" mnemonicParsing="false" styleClass="menu" text="Инструменты">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showInstrumentForm" styleClass="menu-item" text="Добавить инструмент" />
+                        <MenuItem mnemonicParsing="false" onAction="#showBrandForm" styleClass="menu-item" text="Добавить бренд" />
+                        <MenuItem mnemonicParsing="false" styleClass="menu-item" text="Список инструментов" />
+                    </items>
+                </Menu>
+                <Menu fx:id="mUsers" mnemonicParsing="false" styleClass="menu" text="Пользователь">
+                    <items>
+                        <MenuItem fx:id="miEnter" mnemonicParsing="false" onAction="#showLoginForm" styleClass="menu-item" text="Вход" />
+                        <MenuItem fx:id="miLogout" mnemonicParsing="false" onAction="#logout" styleClass="menu-item" text="Выход" />
+                        <MenuItem fx:id="miProfile" mnemonicParsing="false" styleClass="menu-item" text="Профиль" />
+                    </items>
+                </Menu>
+                <Menu fx:id="mAdmin" mnemonicParsing="false" styleClass="menu" text="Administrator" />
+            <Menu fx:id="mBuyers" mnemonicParsing="false" text="Покупатели">
+              <items>
+                <MenuItem onAction="#miAddBuyer" mnemonicParsing="false" text="Добавить покупателя" />
+                  <MenuItem onAction="#miListBuyers" mnemonicParsing="false" text="Список покупателей" />
+              </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="600.0" />
+    </children>
+</VBox>
