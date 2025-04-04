@@ -40,11 +40,12 @@ public class MenuFormController implements Initializable {
        formService.loadLoginForm();
    }
    @FXML private void miAddBuyer(){
-        formService.loadNewBuyersForm();
+        formService.loadRegistrationForm("Добавление покупателя");
    }
-   @FXML private void miListBuyers(){
+    @FXML private void listBuyers() {
         formService.loadListBuyersForm();
-   }
+    }
+
     private void initMenuVisible(){
         if (AppUserService.currentUser.getRoles().contains(AppUserService.ROLES.ADMINISTRATOR.toString())) {
             mInstruments.setVisible(true);

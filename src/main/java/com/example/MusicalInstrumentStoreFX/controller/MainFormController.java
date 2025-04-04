@@ -133,6 +133,13 @@ public class MainFormController implements Initializable {
         });
     }
 
+    @FXML
+    private void goBackToMenu() {
+        // Загружаем главный экран
+        formService.loadMainForm();
+    }
+
+
     public void updateTable() {
         tvListInstruments.setItems(instrumentsService.getListInstruments().filtered(instrument -> instrument.getCount() > 0));
     }

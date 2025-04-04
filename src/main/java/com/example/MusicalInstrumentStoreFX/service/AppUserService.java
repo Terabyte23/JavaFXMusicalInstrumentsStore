@@ -4,11 +4,14 @@ import com.example.MusicalInstrumentStoreFX.model.entity.AppUser;
 import com.example.MusicalInstrumentStoreFX.model.repository.AppUserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
 public class AppUserService {
     public static AppUser currentUser;
+
+
     public enum ROLES {USER, MANAGER, ADMINISTRATOR};
     private AppUserRepository repository;
     public AppUserService(AppUserRepository repository) {
@@ -45,5 +48,13 @@ public class AppUserService {
         }
         currentUser = loginUser;
         return true;
+    }
+
+    public List<AppUser> getAllUsers() {
+        return repository.findAll();
+    }
+
+    public void save(AppUser appUser) {
+        repository.save(appUser);  // Сохраняем пользователя в базе данных
     }
 }

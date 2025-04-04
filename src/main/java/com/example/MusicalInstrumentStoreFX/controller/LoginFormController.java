@@ -31,6 +31,6 @@ public class LoginFormController {
         }
     }
     @FXML private void showRegistrationForm(){
-        formService.loadRegistrationForm();
+        formService.loadRegistrationForm("Создание нового пользователя");
     }
 }

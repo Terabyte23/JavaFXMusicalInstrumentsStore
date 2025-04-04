@@ -15,9 +15,9 @@ public class SpringFXMLLoader {
 
     // Метод загрузки FXML с передачей пути
     public FXMLLoader load(String fxmlPath) {
-        // Загружаем FXML с абсолютным путем
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlPath));
         fxmlLoader.setControllerFactory(applicationContext::getBean); // Spring инжектирует контроллер
         return fxmlLoader;
     }
+
 }

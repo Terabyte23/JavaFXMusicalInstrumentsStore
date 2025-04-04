@@ -28,7 +28,8 @@
             <Menu fx:id="mBuyers" mnemonicParsing="false" text="Покупатели">
               <items>
                 <MenuItem onAction="#miAddBuyer" mnemonicParsing="false" text="Добавить покупателя" />
-                  <MenuItem onAction="#miListBuyers" mnemonicParsing="false" text="Список покупателей" />
+                <MenuItem fx:id="miListBuyers" onAction="#listBuyers" mnemonicParsing="false" text="Список покупателей" />
+
               </items>
             </Menu>
             </menus>

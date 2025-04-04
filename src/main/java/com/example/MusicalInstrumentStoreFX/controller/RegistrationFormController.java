@@ -17,6 +17,7 @@ public class RegistrationFormController {
     @FXML private TextField tfUserName;
     @FXML private TextField pfPassword;
 
+
     public RegistrationFormController(AppUserService appUserService, FormService formService) {
         this.appUserService = appUserService;
         this.formService = formService;
