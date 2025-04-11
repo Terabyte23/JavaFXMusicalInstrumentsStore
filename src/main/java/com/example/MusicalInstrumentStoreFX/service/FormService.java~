@@ -120,32 +120,26 @@ public class FormService {
 
     public void loadEditBuyersForm(AppUser appUser) {
         FXMLLoader fxmlLoader = springFXMLLoader.load("/buyers/editBuyerForm.fxml");
-
         try {
-            // Загружаем FXML и получаем контроллер
             Parent editBuyerFormRoot = fxmlLoader.load();
             EditBuyerFormController editBuyerFormController = fxmlLoader.getController();
 
-            // Передаем пользователя в контроллер для инициализации формы
+            // Важно! Передаём зависимости вручную (если не используешь @Autowired)
+            editBuyerFormController.setFormService(this);
             editBuyerFormController.setEditBuyer(appUser);
 
-            // НЕ нужно вызывать setFormService / setAppUserService — Spring сам всё внедрит через @Autowired
-
-            // Создаём сцену и показываем её
             Scene scene = new Scene(editBuyerFormRoot);
             Stage primaryStage = getPrimaryStage();
-            primaryStage.setTitle("Редактирование покупателя");
+            primaryStage.setTitle("Nptv23JavaFX Магазин - Редактирование пользователя");
             primaryStage.setScene(scene);
             primaryStage.setResizable(false);
             primaryStage.centerOnScreen();
             primaryStage.show();
-
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Ошибка загрузки формы редактирования пользователя", e);
         }
     }
-
 
 
     public Parent loadMenuForm(){
